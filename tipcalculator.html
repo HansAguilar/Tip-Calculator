@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+	<link rel="stylesheet" href="../styles/tipcalculator.css">
+</head>
+
+<body>
+	<div class="tip-container">
+		<div class="tip-contents">
+			<div class="tip-header">
+				<h2>TIP CALCULATOR</h2>
+			</div>
+			<div class="tip-center">
+				<div class="error-container">
+					<p class="bill-blank">Bill Amount cannot be blank or less than 0.</p>
+					<p class="service-blank">You must rate the service to proceed.</p>
+				</div>
+
+				<div class="tip-amount">
+					<h2>How much was your bill?</h2>
+					<input type="number" step="10" id="input-tip" class="bill">
+				</div>
+				<div class="tip-share">
+					<h2>How many people are sharing the bill?</h2>
+					<input type="number" step="1" id="input-tip" min="1" value="1" class="people">
+				</div>
+				<div class="tip-status">
+					<h2>How was your service?</h2>
+					<select name="" id="select">
+						<option value="">Choose...</option>
+						<option value="1">Bad(10%)</option>
+						<option value="2">Good(20%)</option>
+						<option value="3">Best(30%)</option>
+					</select>
+					<br>
+					<button class="calculate">CALCULATE</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal-container modal-hidden">
+		<div class="modal-contents">
+			<p class="closeParent"><span id="close">&#10005;</span></p>
+			<h2 id="green">Thank you and come again!</h2>
+			<h2>Bill Amount: <span id="billAmount"></span></h2>
+			<h2>Your Tip Amount: <span id="tipAmount"></span></h2>
+			<h2>Each Person Owes: <span id="shareAmount"></span></h2>
+		</div>
+	</div>
+
+	<script src="../scripts/tipcalculator.js"></script>
+</body>
+
+</html>

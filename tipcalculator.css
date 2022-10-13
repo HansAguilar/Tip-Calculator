@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400;700&display=swap');
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #82A0AA;
+    background-color: #0C1422;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+.tip-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tip-header{
+    background-color: #606779;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    text-align: center;
+    padding: .4rem;
+    font-size: 1.3rem;
+    color: #63ECBB;
+}
+
+.tip-center{
+    color: #D09EA8;
+    background-color: #3A3655;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.modal-container{
+    background-color: rgba(0, 0, 0, .7);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-hidden{
+    display: none;
+}
+
+.modal-contents{
+    background-color: rgb(90, 80, 157);
+    padding: 3rem;
+}
+
+#input-tip{
+    width: 100%;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    padding: .5rem .3rem;
+}
+
+.tip-amount, .tip-share, .tip-status{
+    margin: 10px 0;
+}
+
+select{
+    width: 100%;
+    padding: .6rem;
+    border: none;
+    border-radius: 2px;
+    font-size: 1rem;
+}
+
+.calculate{
+    font-size: 1rem;
+    padding: .5rem;
+    margin-top: 20px;
+    width: 60%;
+    margin-left: 20%;
+    background-color: #0084FF;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+.error-container{
+    text-align: center;
+    color: #E44443;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: .6rem;
+    display: none;
+}
+
+.error-active{
+    display: block;
+}
+
+.bill-blank{
+    display: none;
+}
+
+.service-blank{
+    display: none;
+}
+
+.bill-active{
+    display: block;
+}
+
+.service-active{
+    display: block;
+}
+
+
+.error-show{
+    display: block;
+}
+
+
+#close{
+    font-size: 1.5rem;
+    font-weight: 550;
+    cursor: pointer;
+    color: white;
+}
+
+.closeParent{
+    text-align: right;
+}
+
+
+#green{
+    color: chartreuse;
+}
